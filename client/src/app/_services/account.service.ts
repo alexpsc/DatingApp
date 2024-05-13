@@ -30,7 +30,6 @@ export class AccountService {
       map((user) => {
         if (user) {
           localStorage.setItem('user', JSON.stringify(user));
-
           this.currentUserSource.next(user);
         }
         return user;
